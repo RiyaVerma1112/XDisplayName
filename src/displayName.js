@@ -31,7 +31,7 @@ function DisplayName() {
                 </label>
                 <button type="submit">Submit</button>
             </form> 
-            <p>Full Name: {combinedWord}</p>
+            { combinedWord && <p>Full Name: {combinedWord}</p>}
         </div>
     ) ;
 } ;
