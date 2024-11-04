@@ -24,12 +24,12 @@ function DisplayName() {
             <form onSubmit={handleSubmit}>
                 <h1>Full Name Display</h1>
                 <label style={{display: "block", fontWeight: "bold"}}>First Name:
-                    <input required value={firstName} onChange={handleFirstName} />
+                    <input required type="text" value={firstName} onChange={handleFirstName} />
                 </label>
                 <label style={{display: "block" , fontWeight: "bold"}}>Last Name:
-                    <input required value={lastName} onChange={handleLastName} />
+                    <input required type="text" value={lastName} onChange={handleLastName} />
                 </label>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form> 
             <p>Full Name: {combinedWord}</p>
         </div>
